@@ -1,0 +1,4 @@
+features:
+  - id: adapter.python
+    description: Records what each pytest test proves and how it ended, as Temper evidence.
+    requires: [unit]

@@ -1,0 +1,34 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "temper-python"
+version = "0.1.0"
+description = "pytest adapter for Temper: tests state what they prove, and write evidence."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+dependencies = ["pytest>=7"]
+classifiers = [
+  "Framework :: Pytest",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Topic :: Software Development :: Testing",
+]
+
+[project.urls]
+Homepage = "https://github.com/turbolytics/temper-python"
+Temper = "https://github.com/turbolytics/temper"
+
+[project.entry-points.pytest11]
+temper = "temper.plugin"
+
+[project.optional-dependencies]
+dev = ["pytest-xdist"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/temper"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

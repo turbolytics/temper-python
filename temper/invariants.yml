@@ -1,0 +1,35 @@
+invariants:
+  - id: adapter.failure_never_passes
+    claim: A test that fails, errors or panics never records pass.
+    applies_to: adapter
+    class: safety
+    family: adapter
+    requires: [unit]
+
+  - id: adapter.skip_records_skip
+    claim: A skipped test records skip.
+    applies_to: adapter
+    class: safety
+    family: adapter
+    requires: [unit]
+
+  - id: adapter.level_from_runner
+    claim: The level a record carries comes only from TEMPER_LEVEL; no test can set it.
+    applies_to: adapter
+    class: safety
+    family: adapter
+    requires: [unit]
+
+  - id: adapter.silent_without_runner
+    claim: Without TEMPER_LEVEL and TEMPER_EVIDENCE the adapter records nothing and changes nothing.
+    applies_to: adapter
+    class: safety
+    family: adapter
+    requires: [unit]
+
+  - id: adapter.never_truncates
+    claim: The adapter only appends, to a file unique to its process; it never truncates or removes evidence.
+    applies_to: adapter
+    class: safety
+    family: adapter
+    requires: [unit]
