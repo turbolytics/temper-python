@@ -104,3 +104,14 @@ make check-matrix  # fail if the committed matrix is stale
 
 This project is declared with Temper in `temper/`, and its own tests prove the
 adapter claims with the adapter: see [MATRIX.md](MATRIX.md).
+
+## Releasing
+
+Set `version` in `pyproject.toml`, merge, then push the matching tag:
+
+```sh
+git tag v0.1.0 && git push origin v0.1.0
+```
+
+The release workflow checks the tag matches the version, runs the tests, builds,
+and publishes to PyPI through trusted publishing.
