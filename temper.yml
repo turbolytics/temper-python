@@ -1,0 +1,6 @@
+temper: "0.1"
+project: temper-python
+
+levels:
+  - name: unit
+    description: pytest; every test runs the plugin in a fresh pytest process

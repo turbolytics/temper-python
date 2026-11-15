@@ -1,0 +1,11 @@
+id: outcomes
+description: >
+  Every outcome an evidence record can carry, from the spec's record format.
+  An adapter answers for each one it can produce.
+applies_to: adapter
+requires: [unit]
+members:
+  - key: pass
+  - key: fail
+  - key: skip
+  - key: error

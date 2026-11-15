@@ -1,0 +1,9 @@
+id: adapter.python
+kind: adapter
+feature: adapter.python
+answers:
+  outcomes:
+    pass: supported
+    fail: supported
+    skip: supported
+    error: supported
