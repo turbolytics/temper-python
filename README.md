@@ -5,6 +5,10 @@ pytest. A test states what it proves; the adapter records how it ended;
 `temper matrix` turns those records into a matrix of what is proven and what
 is not.
 
+Website: <https://turbolytics.github.io/temper/>, with a
+[tutorial](https://turbolytics.github.io/temper/tutorial/) on designing with
+Temper.
+
 ## Getting started
 
 You need the `temper` CLI ([install](https://github.com/turbolytics/temper#install))
