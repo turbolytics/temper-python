@@ -1,8 +1,9 @@
 # temper-python
 
-The [Temper](https://github.com/turbolytics/temper) adapter for pytest. A test
-states what it proves; the adapter records how it ended; `temper matrix` turns
-those records into a matrix of what is proven and what is not.
+The [Temper by Turbolytics](https://github.com/turbolytics/temper) adapter for
+pytest. A test states what it proves; the adapter records how it ended;
+`temper matrix` turns those records into a matrix of what is proven and what
+is not.
 
 ## Getting started
 
